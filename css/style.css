@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*regole di debug*/
+
+.debug #sidebar {
+    background-color: aqua;
+}
+
+.debug main {
+    background-color: cornflowerblue;
+}
+
+.debug footer {
+    background-color: grey;
+}
+
+.debug #cta {
+    background-color: darkorange;
+}
+
+.debug .navbar {
+    background-color: darkblue;
+}
+
+/*UTILITIES*/
+
+.d-flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.overflow-scroll {
+    overflow-y: scroll;
+}
+
+/*CODICE ASIDE*/
+
+#sidebar {
+    width: 50px;
+    height: calc(100vh - 100px) ;
+}
+
+/*CODICE CONTENT*/
+
+#cta {
+    width: calc(100% - 50px);
+    margin-left: 50px;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.content {
+    width: calc(100% - 50px);
+    height: calc(100vh - 100px);
+    padding-top: 70px;
+}
+
+
+
+/*CODICE FOOTER*/
+
+footer {
+    width: 100%;
+    height: 100px;
+}
