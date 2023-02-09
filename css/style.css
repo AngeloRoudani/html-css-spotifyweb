@@ -6,7 +6,7 @@
 
 html {
     font-size: 16px;
-    font-family: font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*regole di debug*/
@@ -47,25 +47,38 @@ html {
 .d-flex {
     display: flex;
 }
-
 .wrap {
     flex-wrap: wrap;
 }
-
 .f-column {
     flex-direction: column;
 }
-
 .overflow-scroll {
     overflow-y: scroll;
 }
-
+.overflow-hidden {
+    overflow-y: hidden;
+}
+.hidden {
+    display: none;
+}
 .text-center {
     text-align: center;
 }
-
 .mg-l1 {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
+}
+.mg-r1 {
+    margin-right: 1rem;
+}
+.pd-t-1 {
+    padding-top: 1rem;
+}
+.text-white {
+    color: white;
+} 
+.text-grey {
+    color: #6e6e6e;
 }
 
 /*CODICE ASIDE*/
@@ -73,17 +86,19 @@ html {
 #sidebar {
     width: 50px;
     height: calc(100vh - 100px);
-    color: white;
     background-color: black;
     padding-top: 1rem;
+    font-size: 14px;
+    font-weight: bold;
 }
+
 .insidebar {
     width: 100%;
+    min-height: 500px;
     height: calc(100% - 80px);
 }
-.logo {
-    margin-left: 1rem;
-}
+
+
 .logo_big {
     width: 60%;
     display: none;
@@ -92,10 +107,11 @@ html {
 .logo_small {
     width: 60%;
 }
+
 .spot_links {
     margin-top: 1rem;
-    height: 30px;
 }
+
 .spot_links img {
     display: inline-block;
     height: 30px;
@@ -103,22 +119,32 @@ html {
 
 .link {
     margin-top: 0.5rem;
+    height: 30px;
 }
 
 .link span {
-    display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     height: 30px;
+    line-height: 2;
+}
+
+.made_playlist i {
+    transform: scale(2);
+    margin: 12px 12px 12px 8px;
+}
+
+.insidebar h4 {
+    margin-top: 1rem;
+}
+
+.items_play li {
+    line-height: 2rem;
 }
 
 .side_foot {
     height: 80px;
     width: 90%;
     margin: auto;
-}
-
-.side_foot img {
-    height: 20px;
 }
 
 .items_play {
@@ -131,7 +157,29 @@ html {
     height: 15px;
     border: solid 1px white;
     border-radius: 50%;
+    padding: 1px 3px 3px 3px;
 }
+
+.side_foot img {
+    background-color: lightgrey;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.side_foot span {
+    margin-left: 10px;
+}
+
+.side_foot {
+    justify-content: space-around; 
+    height: 80px;
+    align-items: center;
+}
+
+
+
+
 /*CODICE CONTENT*/
 
 #cta {
@@ -176,6 +224,7 @@ html {
 footer {
     width: 100%;
     height: 100px;
+    z-index: 9;
 }
 
 /*MEDIAQUERY*/
@@ -183,6 +232,7 @@ footer {
 @media screen and (min-width: 576px) {
     #sidebar {
         width: 250px;
+        padding-left: 0.5rem;
     }
     .logo_small {
         display: none;
@@ -196,6 +246,14 @@ footer {
     #cta {
         width: calc(100% - 250px);
         margin-left: 250px;
+    }
+    .hidden {
+        display: flex;
+        display: inline-block;
+    }
+    .side_foot {
+        justify-content: space-around;
+        align-items: unset;
     }
 }
 

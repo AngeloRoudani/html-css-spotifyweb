@@ -11,58 +11,66 @@
 </head>
 <body class="debug">
 
-    <main class="d-flex">
+    <main class="d-flex overflow-hidden">
         <aside id="sidebar">
-            <div class="insidebar">
+            <div class="insidebar d-flex f-column overflow-hidden text-white">
                 <img class="logo logo_big mg-l1" src="img/logo.svg" alt="logo spotify">
-                <img class="logo logo_small mg-l1 " src="img/logo-small.svg" alt="logo spotify">
+                <img class="logo logo_small mg-l1" src="img/logo-small.svg" alt="logo spotify">
 
-                <div class="spot_links mg-l1 d-flex f-column">
+                <div class="spot_links mg-l1 d-flex f-column text-grey">
                     <div class="link">
                         <img src="img/home.svg" alt="home photo">
-                        <span>Home</span>
+                        <span class="text-white hidden">Home</span>
                     </div>
-                    <div class="link">
+                    <div class="link text-grey">
                         <img src="img/search.svg" alt="search photo">
-                        <span>Cerca</span>
+                        <span class="hidden">Cerca</span>
                     </div>
-                    <div class="link">
+                    <div class="link text-grey">
                         <img src="img/libreria.svg" alt="archive photo">
-                        <span>La tua libreria</span>
-                    </div>
-                    <div class="side_playlist mg-l1 overflow-scroll">
-                        <h3>PLAYLIST</h3>
-                        <div class="made_playlist">
-                            <i class="fa-sharp fa-solid fa-square-plus"></i>
-                            <span>Crea Playlist</span>
-                        </div>
-                        <ul class="items_play">
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                        </ul>
-                    
+                        <span class="hidden">La tua libreria</span>
                     </div>
                 
                 </div>
-            
+
+                <h4 class="mg-l1 text-white hidden">PLAYLIST</h4>
+
+                <div class="made_playlist mg-l1 text-grey hidden">
+                    <i class="fa-sharp fa-solid fa-square-plus"></i>
+                    <span>Crea Playlist</span>
+                </div>
+
+                <div class="side_playlist mg-l1 overflow-scroll hidden d-flex f-column text-grey">
+                    <ul class="items_play">
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </div>
+
             </div>
 
-            <div class="side_foot">
-                <i class="fa-solid fa-arrow-down circle-a"></i>
-                <span>Installa app</span>
-                <hr />
-                <img src="img/profile.svg" alt="profile photo">
-                <span>Giovanni Qualcuno</span>
+            <div class="side_foot d-flex f-column text-grey">
+                <div class=" d-flex">
+                    <i class="fa-solid fa-arrow-down circle-a"></i>
+                    <span class="hidden">Installa app</span>
+                </div>
+                <hr class="hidden"/>
+                <div class="text-white d-flex">
+                    <img src="img/profile.svg" alt="profile photo">
+                    <span class="user_profile hidden" >Giovanni Qualcuno</span>
+                </div>
 
             </div>
-
         </aside>
+
+    <!--inizio content-->
+
         <div class="content overflow-scroll">
             <div id="cta">
                 upgrade
