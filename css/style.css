@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+    font-family: font-family: 'Open Sans', sans-serif;
+}
+
 /*regole di debug*/
 
-.debug #sidebar {
+/*.debug #sidebar {
     background-color: aqua;
-}
+}*/
 
 .debug main {
     background-color: cornflowerblue;
@@ -28,6 +33,7 @@
 
 .debug .menu {
     color: white;
+    height: 50px;
 }
 
 .debug .album li {
@@ -46,6 +52,10 @@
     flex-wrap: wrap;
 }
 
+.f-column {
+    flex-direction: column;
+}
+
 .overflow-scroll {
     overflow-y: scroll;
 }
@@ -54,13 +64,74 @@
     text-align: center;
 }
 
+.mg-l1 {
+    margin-left: 1rem;
+}
+
 /*CODICE ASIDE*/
 
 #sidebar {
     width: 50px;
-    height: calc(100vh - 100px) ;
+    height: calc(100vh - 100px);
+    color: white;
+    background-color: black;
+    padding-top: 1rem;
+}
+.insidebar {
+    width: 100%;
+    height: calc(100% - 80px);
+}
+.logo {
+    margin-left: 1rem;
+}
+.logo_big {
+    width: 60%;
+    display: none;
 }
 
+.logo_small {
+    width: 60%;
+}
+.spot_links {
+    margin-top: 1rem;
+    height: 30px;
+}
+.spot_links img {
+    display: inline-block;
+    height: 30px;
+}
+
+.link {
+    margin-top: 0.5rem;
+}
+
+.link span {
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+}
+
+.side_foot {
+    height: 80px;
+    width: 90%;
+    margin: auto;
+}
+
+.side_foot img {
+    height: 20px;
+}
+
+.items_play {
+    list-style: none;
+}
+
+.circle-a {
+    font-size: 10px;
+    width: 15px;
+    height: 15px;
+    border: solid 1px white;
+    border-radius: 50%;
+}
 /*CODICE CONTENT*/
 
 #cta {
@@ -111,16 +182,23 @@ footer {
 
 @media screen and (min-width: 576px) {
     #sidebar {
-        width: 200px;
+        width: 250px;
+    }
+    .logo_small {
+        display: none;
+    }
+    .logo_big {
+        display: block;
     }
     .content {
-        width: calc(100% - 200px);
+        width: calc(100% - 250px);
     }
     #cta {
-        width: calc(100% - 200px);
-        margin-left: 200px;
+        width: calc(100% - 250px);
+        margin-left: 250px;
     }
 }
+
 @media screen and (min-width: 768px) {
     .album li {
         width: calc((100% / 4) - 2rem);
