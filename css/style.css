@@ -15,26 +15,23 @@ html {
     background-color: aqua;
 }*/
 
-.debug main {
+/*.debug main {
     background-color: cornflowerblue;
-}
+}*/
 
 .debug footer {
     background-color: grey;
 }
 
-.debug #cta {
+/*.debug #cta {
     background-color: darkorange;
-}
+}*/
 
-.debug .navbar {
+/*.debug .navbar {
     background-color: darkblue;
-}
+}*/
 
-.debug .menu {
-    color: white;
-    height: 50px;
-}
+
 
 .debug .album li {
     background-color: brown;
@@ -79,6 +76,10 @@ html {
 } 
 .text-grey {
     color: #6e6e6e;
+}
+.btn {
+    border: solid 1px white;
+    border-radius: 50px;
 }
 
 /*CODICE ASIDE*/
@@ -190,13 +191,26 @@ html {
     top: 0;
     left: 0;
     z-index: 99;
-    text-align: right;
+    background-color: #080b12;
+    filter: opacity(0.5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-big {
+    width: 230px;
+    font-size: 15px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 .content {
     width: calc(100% - 50px);
     height: calc(100vh - 100px);
     padding-top: 70px;
+    background-color: #141922;
 } 
 
 .title {
@@ -206,11 +220,21 @@ html {
 
 .menu li {
     display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.marked {
+    border-bottom: solid 2px #adff2f;
+    width: 30px;
+    margin: auto;
 }
 
 .content ul {
     list-style: none;
 }
+
 
 
 .album li {
