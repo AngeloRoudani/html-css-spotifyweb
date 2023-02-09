@@ -259,6 +259,100 @@ footer {
     height: 100px;
     z-index: 9;
     background-color: #282828;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-foot {
+    width: calc(155px - 1rem);
+    margin: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middle-foot {
+    width: calc(40% - 1rem);
+    margin: 0.5rem;
+    height: 60px;
+}
+
+.right-foot {
+    width: calc(155px - 1rem);
+    margin: 0.5rem;
+    padding-left: 8px;
+}
+
+.left-foot img {
+    width: 30px;
+    height: 30px;
+}
+
+.song_play {
+    margin-right: 1rem;
+}
+
+.icons_song {
+    margin-right: 1rem;
+}
+
+.icons_song i {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.middle-top {
+    width: 220px;
+    justify-content: space-between;
+    align-self: center;
+    margin-top: 0.5rem;
+}
+
+.play-btn {
+    transform: scale(2);
+}
+
+.middle_bottom span {
+    font-size: 12px;
+    display: inline-block;
+}
+
+.middle_bottom {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.8rem;
+}
+
+.progress_bar {
+    width: 70%;
+    height: 4px;
+    background-color: #6e6e6e;
+    border-radius: 5px;
+}
+
+.inside_progress {
+    width: 40%;
+    height: 4px;
+    background-color: #15d303;
+    border-radius: 5px;
+}
+
+.inside_progress_volume {
+    width: 20%;
+    height: 4px;
+    background-color: #15d303;
+    border-radius: 5px;
+}
+.progress_bar_volume {
+    width: 50%;
+    height: 4px;
+    background-color: #6e6e6e;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.right-foot i {
+    font-size: 0.8rem;
+    margin-right: 8px;
 }
 
 /*MEDIAQUERY*/
@@ -295,7 +389,7 @@ footer {
     .album li {
         width: calc((100% / 4) - 1rem);
         margin: 2rem 0.5rem;
-      }
+    }
 }
 
 
@@ -304,4 +398,25 @@ footer {
         width: calc((100% / 6 ) - 1rem);
         margin: 2rem 0.5rem;
     }
+
+    .left-foot {
+        width: calc(200px - 1rem);
+    }
+
+    .right-foot{
+        width: calc(200px - 1rem);
+    }
+
+    .left-foot .align {
+        display: inline;
+    }
+
+    .left-foot h5 {
+        vertical-align: center;
+    }
+
+    .left-foot h6 {
+        vertical-align: center;
+    }
+
 }
