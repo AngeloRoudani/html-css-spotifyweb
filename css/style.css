@@ -89,7 +89,7 @@ html {
     height: calc(100vh - 100px);
     background-color: black;
     padding-top: 1rem;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
 }
 
@@ -121,16 +121,17 @@ html {
 .link {
     margin-top: 0.5rem;
     height: 30px;
+    position: relative;
 }
 
 .link span {
     vertical-align: top;
     height: 30px;
-    line-height: 2;
+    line-height: 2.5;
 }
 
 .made_playlist i {
-    transform: scale(2);
+    transform: scale(2.5);
     margin: 12px 12px 12px 8px;
 }
 
@@ -204,6 +205,7 @@ html {
     padding: 0.5rem 1rem;
     font-weight: bold;
     text-align: center;
+    margin-right: 1rem;
 }
 
 .content {
@@ -314,10 +316,12 @@ footer {
 .middle_bottom span {
     font-size: 12px;
     display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .middle_bottom {
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-top: 0.8rem;
 }
@@ -368,6 +372,14 @@ footer {
     .logo_big {
         display: block;
     }
+    .link_border {
+        border-left: solid 3px #adff2f;
+        position: relative;
+        left: -0.5rem;                                                             
+        top: 0;
+        z-index: 9;
+        padding-left: 0.3rem;
+    }
     .content {
         width: calc(100% - 250px);
     }
@@ -383,6 +395,10 @@ footer {
         justify-content: space-around;
         align-items: unset;
     }
+    .song_play {
+        line-height: 0.9rem;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -392,7 +408,7 @@ footer {
     }
 }
 
-
+                                                      
 @media screen and (min-width: 992px) {
     .album li {
         width: calc((100% / 6 ) - 1rem);
@@ -411,12 +427,5 @@ footer {
         display: inline;
     }
 
-    .left-foot h5 {
-        vertical-align: center;
-    }
-
-    .left-foot h6 {
-        vertical-align: center;
-    }
 
 }
