@@ -208,6 +208,10 @@ html {
 
 /*CODICE CONTENT*/
 
+body {
+    min-width: 500px;
+}
+
 #cta {
     width: calc(100% - 50px);
     margin-left: 50px;
@@ -289,6 +293,7 @@ html {
     left: 45%;
     right: 45%;
     bottom: 40%;
+    z-index: 9;
 }
 
 .overlay:hover .overlay-btn {
@@ -459,6 +464,8 @@ footer {
 @media screen and (min-width: 576px) {
     #sidebar {
         width: 250px;
+    }
+    .insidebar {
         padding-left: 0.5rem;
     }
     .logo_small {
@@ -467,13 +474,14 @@ footer {
     .logo_big {
         display: block;
     }
+
     .link_border {
         border-left: solid 3px #adff2f;
         position: relative;
-        left: -0.5rem;                                                             
+        left: -1rem;                                                             
         top: 0;
         z-index: 9;
-        padding-left: 0.3rem;
+        padding-left: 0.8rem;
     }
     .content {
         width: calc(100% - 250px);
