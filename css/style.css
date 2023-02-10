@@ -95,7 +95,7 @@ html {
 
 .insidebar {
     width: 100%;
-    min-height: 500px;
+    min-height: 400px;
     height: calc(100% - 80px);
 }
 
@@ -130,6 +130,11 @@ html {
     line-height: 2.5;
 }
 
+.link span:hover {
+    color: white;
+    cursor: pointer;
+}
+
 .made_playlist i {
     transform: scale(2.5);
     margin: 12px 12px 12px 8px;
@@ -139,14 +144,33 @@ html {
     margin-top: 1rem;
 }
 
+.made_playlist:hover {
+    color: white;
+    cursor: pointer;
+}
+
 .items_play li {
     line-height: 2rem;
+}
+
+.items_play li:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .side_foot {
     height: 80px;
     width: 90%;
     margin: auto;
+}
+
+.install:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.profile {
+    line-height: 30px;
 }
 
 .items_play {
@@ -212,6 +236,7 @@ html {
 
 .btn-big:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .content {
@@ -237,6 +262,11 @@ html {
     padding: 1rem;
 }
 
+.menu li:hover {
+    color: white;
+    cursor: pointer;
+}
+
 .marked {
     border-bottom: solid 2px #adff2f;
     width: 30px;
@@ -259,15 +289,16 @@ html {
     left: 45%;
     right: 45%;
     bottom: 40%;
-    z-index: 9;
 }
 
 .overlay:hover .overlay-btn {
     display: block;
+    cursor: pointer;
 }
 
 .overlay:hover img {
     filter: opacity(0.5);
+    cursor: pointer;
 }
 
 .album li {
@@ -314,6 +345,17 @@ footer {
 .left-foot img {
     width: 30px;
     height: 30px;
+}
+
+.left-foot h6:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.icons_song i:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .song_play {
