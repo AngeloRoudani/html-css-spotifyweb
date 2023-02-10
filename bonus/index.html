@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify Clone</title>
+</head>
+<body class="debug">
+
+    <main class="d-flex overflow-hidden">
+
+        <!--Inizio Sidebar-->
+        
+        <aside id="sidebar">
+            <div class="insidebar d-flex f-column overflow-hidden text-white">
+                <img class="logo logo_big mg-l1" src="img/logo.svg" alt="logo spotify">
+                <img class="logo logo_small mg-l1" src="img/logo-small.svg" alt="logo spotify">
+
+                <div class="spot_links mg-l1 d-flex f-column text-grey">
+                    <div class="link link_border">
+                        <img src="img/home.svg" alt="home photo">
+                        <span class="text-white hidden">Home</span>
+                    </div>
+                    <div class="link text-grey">
+                        <img src="img/search.svg" alt="search photo">
+                        <span class="hidden">Cerca</span>
+                    </div>
+                    <div class="link text-grey">
+                        <img src="img/libreria.svg" alt="archive photo">
+                        <span class="hidden">La tua libreria</span>
+                    </div>
+                
+                </div>
+
+                <h4 class="mg-l1 text-white hidden">PLAYLIST</h4>
+
+                <div class="made_playlist mg-l1 text-grey hidden">
+                    <i class="fa-sharp fa-solid fa-square-plus"></i>
+                    <span>Crea Playlist</span>
+                </div>
+
+                <div class="side_playlist mg-l1 overflow-scroll hidden d-flex f-column text-grey">
+                    <ul class="items_play">
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="side_foot d-flex f-column text-grey">
+                <div class="install d-flex">
+                    <i class="fa-solid fa-arrow-down circle-a"></i>
+                    <span class="hidden">Installa app</span>
+                </div>
+                <hr class="hidden"/>
+                <div class="profile text-white d-flex">
+                    <img src="img/profile.svg" alt="profile photo">
+                    <span class="user_profile hidden" >Giovanni Qualcuno</span>
+                </div>
+
+            </div>
+        </aside>
+
+    <!--inizio content-->
+
+        <div class="content overflow-scroll">
+            <div id="cta">
+                <div class="btn btn-big text-white">
+                EFFETTUA L'UPGRADE
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul class="menu text-center text-grey">
+                    <li>IN EVIDENZA<div class="marked"></div></li>
+                    <li>PODCAST</li>
+                    <li>CLASSIFICHE</li>
+                    <li>GENERI E MOOD</li>
+                    <li>NUOVE USCITE</li>
+                    <li>SCOPRI</li>
+                </ul>
+            </nav>
+            <section id="recently">
+                <h2 class="title text-white">Recently played</h2>
+                <ul class="album d-flex wrap">
+                    <li>
+                        <div class="overlay">
+                            <i class="fa-regular fa-circle-play play-btn overlay-btn"></i>
+                            <img src="img/metal_lifting.jpg" alt="album metal">
+                        </div>
+                        <h4 class="text-white">Heavy Metal</h4>
+                        <h6 class="text-grey">Subtitle</h6>
+                    </li>
+                    <li>
+                        <div class="overlay">
+                            <i class="fa-regular fa-circle-play play-btn overlay-btn"></i>
+                            <img src="img/stranger.jpeg" alt="album stranger">
+                        </div>
+                        <h4 class="text-white">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h4>
+                        <h6 class="text-grey">Kyle Dixon & Michael Stein</h6>
+                    </li>
+                    <li>
+                        <div class="overlay">
+                            <i class="fa-regular fa-circle-play play-btn overlay-btn"></i>
+                            <img src="img/aquietplace.jpeg" alt="album a quiet place">
+                        </div>
+                        <h4 class="text-white">A Quiet Place</h4>
+                        <h6 class="text-grey">Subtitle</h6>
+                    </li>
+                    <li>
+                        <div class="overlay">
+                            <i class="fa-regular fa-circle-play play-btn overlay-btn"></i>
+                            <img src="img/split.jpeg" alt="album split">
+                        </div>
+                        <h4 class="text-white">Split</h4>
+                        <h6 class="text-grey">Subtitles</h6>
+                    </li>
+                    <li>
+                        <div class="overlay">
+                            <i class="fa-regular fa-circle-play play-btn overlay-btn"></i>
+                            <img src="img/cure.jpeg" alt="album cure">
+                        </div>
+                        <h4 class="text-white">A cure for Wellness</h4>
+                        <h6 class="text-grey">Subtitles</h6>
+                    </li>
+                    <li>
+                        <div class="overlay">
+                            <i class="fa-regular fa-circle-play play-btn overlay-btn"></i>
+                            <img src="img/sinister.jpeg" alt="album sinister">
+                        </div>
+                        <h4 class="text-white">Sinister</h4>
+                        <h6 class="text-grey">Subtitles</h6>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2 class="title text-white">Creato per Efesto</h2>
+                <h6 class="subtitle text-grey">Più ascolti, più accurati saranno i suggerimenti</h6>
+                 <ul class="album d-flex wrap">
+                    <li>
+                        <div class="overlay">
+                            <i class="fa-regular fa-circle-play play-btn overlay-btn"></i>
+                            <img src="img/radar.jpeg" alt="album radar">
+                        </div>
+                        <h4 class="text-white">Release Radar</h4>
+                    </li>
+                    <li>
+                        <div class="overlay">
+                            <i class="fa-regular fa-circle-play play-btn overlay-btn"></i>
+                            <img src="img/mixdaily.jpeg" alt="album mix">
+                        </div>
+                        <h4 class="text-white">Daily Mix 1</h4>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2 class="title text-white">Artisti più popolari</h2>
+                <h6 class="subtitle text-grey">Più ascolti, più accurati saranno i suggerimenti</h6>
+                 <ul class="album d-flex wrap">
+                    <li>
+                        <div class="overlay">
+                            <i class="fa-regular fa-circle-play play-btn overlay-btn"></i>
+                            <img src="img/youg.jpeg" alt="album radar">
+                        </div>
+                        <h4 class="text-white">Lana Del Rey</h4>
+                    </li>
+                    <li>
+                        <div class="overlay">
+                            <i class="fa-regular fa-circle-play play-btn overlay-btn"></i>
+                            <img src="img/einaudi.jpeg" alt="album mix">
+                        </div>
+                        <h4 class="text-white">Einaudi</h4>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+
+    </main>
+    <!--Player, volume and artist-->
+    <footer class="d-flex">
+
+        <div class="left-foot text-grey d-flex">
+            <img src="img/sinister.jpeg" alt="sinister photo">
+            <div class="song_play ">
+                <h5 class="text-white">Sinister</h5>
+                <h6 class="align">Brano</h6>
+                <h6 class="align">Nome</h6>
+            </div>
+            <div class="icons_song">
+                <i class="fa-regular fa-heart align"></i>
+                <i class="fa-regular fa-folder align"></i>
+            </div>
+        </div>
+
+
+        <div class="middle-foot text-white d-flex f-column">
+            <div class="middle-top d-flex">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play play-btn"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-arrow-rotate-right"></i>
+            </div>
+
+            <div class="middle_bottom d-flex ">
+                <span>2:25</span>
+                <div class="progress_bar">
+                    <div class="inside_progress d-flex">
+                        <div class="point_prog"></div>
+                    </div>
+                </div>
+                <span>5:02</span>
+            </div>
+        </div>
+
+        <div class="right-foot text-white d-flex">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-display"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <div class="progress_bar_volume">
+                <div class="inside_progress_volume d-flex">
+                    <div class="point_prog"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    
+</body>
+</html>

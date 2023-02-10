@@ -289,9 +289,9 @@ body {
     display: none;
     color: white;
     position: absolute;
-    top: 43%;
-    left: 40%;
-    right: 40%;
+    top: 45%;
+    left: 45%;
+    right: 45%;
     bottom: 40%;
     z-index: 9;
 }
