@@ -406,6 +406,14 @@ footer {
         width: calc((100% / 4) - 1rem);
         margin: 2rem 0.5rem;
     }
+    .right-foot i {
+        padding-right: 0.5rem;
+    }
+    .right-foot {
+        width: calc(200px - 2rem);
+        margin-right: 1rem;
+    }
+
 }
 
                                                       
